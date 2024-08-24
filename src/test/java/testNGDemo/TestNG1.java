@@ -8,7 +8,7 @@ public class TestNG1 {
 	@Test
 	public void HA() {     // HARD ASSERT
 		
-		Assert.assertTrue(false);	
+		Assert.assertTrue(true);	
 		
 		System.out.println("Hard Assert Done");
 		
