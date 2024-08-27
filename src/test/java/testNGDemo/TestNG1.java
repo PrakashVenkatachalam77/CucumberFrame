@@ -5,21 +5,25 @@ import org.testng.asserts.SoftAssert;
 
 public class TestNG1 {
 	
-	@Test
+	@Test(priority=2,description="This is the Third Case to be Executed",invocationCount=3)
 	public void HA() {     // HARD ASSERT
-		
-		Assert.assertTrue(true);	
+		Assert.assertTrue(false);	
 		
 		System.out.println("Hard Assert Done");
 		
 	}
 
-	@Test
+	@Test(priority=1,description="This is the Second Case to be Executed",invocationCount=3,dependsOnMethods="HA",alwaysRun=true)
 	public void SA() {               //SOFT ASSERT
 		SoftAssert sa = new SoftAssert();
 		sa.assertTrue(true);
 		System.out.println("Soft Assert Done");
 		sa.assertAll();
 		
+	}
+	@Test(priority=0,description="This is the First Case to be Executed",invocationCount=5,enabled=false)
+	public void method3() {
+		
+		System.out.println("Third Method");
 	}
 }
