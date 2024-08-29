@@ -1,5 +1,6 @@
 package testNGDemo;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -8,7 +9,6 @@ public class TestNG1 {
 	@Test(priority=2,description="This is the Third Case to be Executed",invocationCount=3)
 	public void HA() {     // HARD ASSERT
 		Assert.assertTrue(false);	
-		
 		System.out.println("Hard Assert Done");
 		
 	}
@@ -26,4 +26,12 @@ public class TestNG1 {
 		
 		System.out.println("Third Method");
 	}
+	
+	@BeforeMethod
+	public void annotMet() {
+		System.out.println("Before Method Annotation");
+		
+	}
+	
+	
 }
