@@ -28,7 +28,7 @@ public class DatePicker {
 			
 			 String mth = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
 			
-			  String yer = driver.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText();
+			 String yer = driver.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText();
 			  
 			
 			if(mth.equals(Month) && yer.equals(Year)){

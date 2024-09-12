@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="URL" value="https://www.saucedemo.com/"/>
     <classes>
-      <class name="testNGDemo.TestNG1">
+      <class name="testNGDemo.ProjectDemo">
         <methods>
-          <include name="HA"/>
-          <include name="annotMet"/>
+          <include name="password"/>
+          <include name="add"/>
+          <include name="maxi"/>
+          <include name="selectproduct"/>
+          <include name="url"/>
+          <include name="browsersetup"/>
+          <include name="end"/>
+          <include name="login"/>
+          <include name="username"/>
         </methods>
-      </class> <!-- testNGDemo.TestNG1 -->
+      </class> <!-- testNGDemo.ProjectDemo -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

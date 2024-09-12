@@ -3,12 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGDemo.TestNG1">
+      <class name="testNGDemo.ProjectDemo">
         <methods>
-          <include name="HA"/>
-          <include name="annotMet"/>
+          <include name="password"/>
+          <include name="add"/>
+          <include name="maxi"/>
+          <include name="selectproduct"/>
+          <include name="start"/>
+          <include name="url"/>
+          <include name="login"/>
+          <include name="username"/>
         </methods>
-      </class> <!-- testNGDemo.TestNG1 -->
+      </class> <!-- testNGDemo.ProjectDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
