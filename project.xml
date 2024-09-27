@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+  <test thread-count="5" name="Test">
+		<parameter name="URL" value="https://www.saucedemo.com/"></parameter>
+	<groups>
+		
+		<define name="Homepage">
+			<include name="Login"></include>
+			<include name="Home"></include>
+		</define>
+		
+		<define name="ChekoutPage">
+			<include name="Checkout"></include>
+			<include name="Details"></include>
+		</define>
+		
+		<define name="BackHome">
+			<include name="End"></include>
+		</define>
+		
+	</groups>
+	<classes>
+      <class name="testNGDemo.ProjectDemo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
