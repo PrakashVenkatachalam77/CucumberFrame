@@ -1,11 +1,11 @@
 package selinium;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 public class LocateAndClick {
 	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
@@ -18,7 +18,7 @@ public class LocateAndClick {
 		tr.click();
 		open.manage().window().minimize();
 		//		WebElement d= open.findElement(By.className("a-size-medium a-color-base a-text-normal"));
-//		d.click();	
+//		d.click();
 	}
 
 }

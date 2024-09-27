@@ -8,7 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PracClick {
 	public static void main(String[] args) {
-		
+
 		WebDriverManager.chromedriver().setup();
 		WebDriver clic= new ChromeDriver();
 		clic.get("https://account.kpostindia.com/login");
@@ -21,8 +21,8 @@ public class PracClick {
 		c.click();
 		//clic.quit();
 	//		WebElement d= clic.findElement(By.className("toggle-button-navbar mat-icon-button mat-button"));
-//		d.click();	
-	
+//		d.click();
+
 	}
 
 }

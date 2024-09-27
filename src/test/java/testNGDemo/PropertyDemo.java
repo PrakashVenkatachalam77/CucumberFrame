@@ -5,21 +5,34 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
 public class PropertyDemo {
-	
-	public static void main(String[] args) throws IOException {
-		
+
+	Properties a;
+	WebDriver drive;
+	@Test
+	public  String file() throws IOException {
+
 		 File ac = new File("C:\\Users\\baska\\git\\repository\\ProjectName\\src\\test\\resources\\GlobalFiles.properties\\test.properties");
-		
+
 	     FileReader f= new FileReader(ac);
-	     
-	     Properties a= new Properties();
-	     
+
+	     a= new Properties();
+
 	     a.load(f);
-	     
-	     System.out.println(a.getProperty("Url"));
+
+	     String property = a.getProperty("username");
+
+	    System.out.println(property);
+		return property;
+
+
+	   //  return property;
+
 	}
-	
-	
+
+
 
 }

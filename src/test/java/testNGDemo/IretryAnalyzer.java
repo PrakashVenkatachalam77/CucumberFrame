@@ -9,7 +9,7 @@ public class IretryAnalyzer implements IRetryAnalyzer  {
 	@Override
 	public boolean retry(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+
 		while (mincount<maxcount) {
 			mincount++;
 			return true;
@@ -17,7 +17,7 @@ public class IretryAnalyzer implements IRetryAnalyzer  {
 
 		return false;
 	}
-	
-	
+
+
 
 }

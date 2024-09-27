@@ -7,11 +7,15 @@
         <methods>
           <include name="password"/>
           <include name="add"/>
+          <include name="report"/>
           <include name="maxi"/>
           <include name="selectproduct"/>
+          <include name="finish"/>
           <include name="start"/>
           <include name="url"/>
+          <include name="checkout"/>
           <include name="login"/>
+          <include name="checkoutdetails" invocation-numbers="0"/>
           <include name="username"/>
         </methods>
       </class> <!-- testNGDemo.ProjectDemo -->

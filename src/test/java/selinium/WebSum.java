@@ -1,5 +1,6 @@
 package selinium;
 import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,13 +20,13 @@ public class WebSum {
 		System.out.println("Data of the " + text2 + " " + "are :");
 
 		int sum = 0;
-		
+
 		List<WebElement> elements = driver.findElements(By.xpath("//table[@name='BookTable']/tbody/tr/td[4]"));  //Located the the Particular Column and rows
-		for (WebElement Total : elements) 
+		for (WebElement Total : elements)
 		{
 			String text = Total.getText();
 			System.out.println(text);
-			
+
 			 int Price = Integer.parseInt(text);       // Converting String to Integer
 			 sum=sum+Price;
 

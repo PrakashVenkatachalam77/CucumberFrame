@@ -1,15 +1,16 @@
 package selinium;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class XpathPrac {
-	
+
 	public static void main(String[] args) throws InterruptedException {
-		
+
 		WebDriverManager.chromiumdriver().setup();
 		WebDriver vc= new ChromeDriver();
 		vc.get("https://www.opencart.com/");
@@ -20,7 +21,7 @@ public class XpathPrac {
 	    lk.click();
 	    Thread.sleep(1000);
         WebElement dc = vc.findElement(By.xpath("//a[contains(text(),'Contact Us')]")); // XPath using Contains Text Method
-        dc.click();		
+        dc.click();
         WebElement ij = vc.findElement(By.xpath("//input[contains(@id,'input-name')]"));   // XPath using Contains (Attribute name and value) method
         ij.sendKeys("V.Prakash");
         WebElement tf = vc.findElement(By.xpath("//input[starts-with(@name,'email')]"));  // XPath using starts-with Method

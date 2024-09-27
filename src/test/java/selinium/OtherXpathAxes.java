@@ -8,9 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class OtherXpathAxes {
-	
+
 	public static void main(String[] args) throws InterruptedException {
-		
+
 		WebDriverManager.chromiumdriver().setup();
 		WebDriver eat= new ChromeDriver();
 		eat.get("https://www.nopcommerce.com/en");
@@ -28,8 +28,8 @@ public class OtherXpathAxes {
 		mn.click();
 		WebElement mj = eat.findElement(By.xpath("//option[@value='2']"));
 		mj.click();
-		
-		
+
+
 	}
-	
+
 }

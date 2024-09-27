@@ -1,16 +1,17 @@
 package selinium;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class CopiesMessageAuto {
-	
+
 	public static void main(String[] args) throws InterruptedException {
-		
+
 		WebDriverManager.chromiumdriver().setup();
 		WebDriver nb= new ChromeDriver();
 		nb.get("https://demo.nopcommerce.com/");

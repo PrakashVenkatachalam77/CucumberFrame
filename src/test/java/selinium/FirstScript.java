@@ -6,9 +6,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FirstScript {
-	
+
 public static void main(String[] args) {
-	
+
 	//WebDriverManager.chromiumdriver().setup();
 	WebDriverManager.firefoxdriver().setup();
    WebDriver tp= new FirefoxDriver();
