@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	<parameter name="URL" value="https://demo.automationtesting.in/Register.html"> </parameter>
+	<parameter name="FirstName" value="Prakash"></parameter>
+	<parameter name= "SecondName" value="Venkat"></parameter>
+	<parameter name= "Email" value="Prakash@gmail.com"></parameter>
+	<parameter name= "Phone" value="8610368086"></parameter>
+    <classes>
+      <class name="testNGDemo.DataDrivenDemo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
