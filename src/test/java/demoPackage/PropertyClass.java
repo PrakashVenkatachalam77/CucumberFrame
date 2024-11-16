@@ -69,6 +69,22 @@ public String passwordfetch() throws IOException {
 				
 		
 	}
+
+public String Cardnumberfetch() throws IOException {
+	
+	f=new File("C:\\Prakash\\New folder\\CucumberFramework\\src\\test\\resources\\PropertiesFolder\\demo.properties");
+	
+	fr= new FileReader(f);
+	
+	 prop= new Properties();
+			
+			prop.load(fr);
+			
+			String number = prop.getProperty("CreditCardNumber");
+			return number;
+	
+	
+}
 	
 
 
